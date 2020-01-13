@@ -8,6 +8,11 @@
         Houzz Planner
     </title>
 
+    <meta name="description" content="Houzz Planner - goals, portfolio and objectives" />
+    <meta name="keywords" content="house, home, decor, construction" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Karen Nasser" />
+
     <link rel="stylesheet" type="text/css" href="/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <link
@@ -36,27 +41,28 @@
     <!--MAIN-->
     <main>
         <!--SLIDER-->
-        <div class="slider">
-
-            <div class="space-left">
-                <img class="arrow-left" src="/ASSETS/UI/seta_esq.svg" alt="seta esquerda" />
-            </div>
-
-            <div class="main-img">
-                <img class="port-img" src="/ASSETS/IMG/banner_1.jpg" alt="img 1 portfolio" />
-                <div class="container-dots">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
+        <div id="carrousel-slider">
+            <div class="slider">
+                <div class="space-left">
+                    <img class="arrow-left" src="/ASSETS/UI/seta_esq.svg" alt="seta esquerda" />
                 </div>
-            </div>
 
-            <div class="space-right">
-                <img class="arrow-right" src="/ASSETS/UI/seta_dir.svg" alt="seta direita" />
+                <div class="portfolio-img">
+                    <img class="port-img" src="/ASSETS/IMG/banner_1.jpg" alt="img 1 portfolio" />
+                    <div class="dots-slider">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+
+                <div class="space-right">
+                    <img class="arrow-right" src="/ASSETS/UI/seta_dir.svg" alt="seta direita" />
+                </div>
             </div>
         </div>
 
-        <section class="about-us">
+        <section id="about-us">
             <div class="titles">
                 <h1> About us </h1>
                 <p>Customize the software for your needs. You will love it when see
@@ -69,17 +75,17 @@
                 <div class="box">
                     <p>HELLO!</p>
                 </div>
-                <img class="work-three" src="/ASSETS/IMG/work/portfolio_3.jpg" alt="portfolio img" />
+                <img class="box-img" src="/ASSETS/IMG/work/portfolio_3.jpg" alt="portfolio img" />
 
-                <div class="columns">
+                <div class="columns-about">
 
-                    <p class="highlight-p"> Sed posuere consectetur est at
+                    <p class="highlight-about"> Sed posuere consectetur est at
                         lobortis. Morbi leo risus, porta ac
                         consectetur ac, vestibulum at
                         eros. Donec ullamcorper nulla
                         non metus auctor fringilla. </p>
 
-                    <p class="others-p"> Lorem ipsum dolor sit amet, consectetur
+                    <p class="about-p"> Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit. Aliquam non est sodales,
                         dignissim turpis at, dictum risus. Nullam sed
                         fermentum felis. Nulla placerat, magna quis
@@ -93,7 +99,7 @@
                         elementum leo. Sed a odio ligula. <br><br>
                     </p>
 
-                    <p class="others-p">
+                    <p class="about-p">
                         In hac habitasse platea dictumst. Class
                         aptent taciti sociosqu ad litora torquent per
                         conubia nostra, per inceptos himenaeos.
@@ -109,7 +115,7 @@
 
         </section>
 
-        <section class="awesome-features">
+        <section id="core-features">
             <div class="titles">
                 <h1>Awesome Core Features</h1>
                 <p>Customize the software for your needs. You will love it when see
@@ -120,7 +126,7 @@
             <div class="container-features">
                 <div class="title">
                     <div class="text-title">
-                        <p class="features-list">Not sure yet
+                        <p class="features-highlight">Not sure yet
                             and want to
                             check all
                             features list?</p>
@@ -138,7 +144,7 @@
                         the swipe technology and fully
                         responsive design works on all
                         devices.</p>
-                    <div class="button">
+                    <div class="button-readmore">
                         <p>read more</p>
                         <img class="arrow-features" src="/ASSETS/UI/seta_dir.svg">
                     </div>
@@ -152,7 +158,7 @@
                         You can choose parallax or static
                         image, color or pattern. It is easier
                         than you think.</p>
-                    <div class="button">
+                    <div class="button-readmore">
                         <p>read more</p>
                         <img class="arrow-features" src="/ASSETS/UI/seta_dir.svg">
                     </div>
@@ -166,7 +172,7 @@
                         the swipe technology and fully
                         responsive design works on all
                         devices.</p>
-                    <div class="button">
+                    <div class="button-readmore">
                         <p>read more</p>
                         <img class="arrow-features" src="/ASSETS/UI/seta_dir.svg">
                     </div>
@@ -176,15 +182,15 @@
         </section>
 
 
-        <section class="services">
+        <section id="services">
             <div class="container-services">
                 <div class="services-title">
                     <h1>Services</h1>
                     <p>Customize the software for your needs. You will love it when see
                         <br> how easy it is!</p>
 
-                    <div class="flex-services">
-                        <div class="blocks">
+                    <div class="containerflex-services">
+                        <div class="services-blocks">
                             <img class="icons-services" src="/ASSETS/UI/services_icon_1.svg" alt="services icon">
                             <h1>Design</h1>
                             <p>Fast and well optimized the code of
@@ -193,7 +199,7 @@
                                 devices</p>
                         </div>
 
-                        <div class="blocks">
+                        <div class="services-blocks">
                             <img class="icons-services" src="/ASSETS/UI/services_icon_2.svg" alt="services icon">
                             <h1>Home Decor</h1>
                             <p>Fast and well optimized the code of
@@ -202,7 +208,7 @@
                                 devices</p>
                         </div>
 
-                        <div class="blocks">
+                        <div class="services-blocks">
                             <img class="icons-services" src="/ASSETS/UI/services_icon_3.svg" alt="services icon">
                             <h1>Organization</h1>
                             <p>Fast and well optimized the code of
@@ -211,7 +217,7 @@
                                 devices</p>
                         </div>
 
-                        <div class="blocks">
+                        <div class="services-blocks">
                             <img class="icons-services" src="/ASSETS/UI/services_icon_4.svg" alt="services icon">
                             <h1>Improvement</h1>
                             <p>Fast and well optimized the code of
@@ -220,54 +226,43 @@
                                 devices</p>
                         </div>
                     </div>
-
-
-
-
-
-
                 </div>
-
             </div>
         </section>
 
-        <section class="work">
-            <div class="titles">
-                <h1>Work</h1>
-                <p>Customize the software for your needs. You will love it when see
-                    <br> how easy it is!
-                </p>
-            </div>
-            <div class="container-work">
-                <div class="content">
-                    <div class="title-work">
-                        <p class="core-features">Some main features
-                            on the core version</p>
-                    </div>
-                    <div class="infos">
-                        <p><span>Date:</span> August 25, 2018 <br>
-                            <span>Client:</span> SHORT Group <br>
-                            <span>Task:</span> Lorem ipsum dolor sit amet <br>
-                            <span>Category:</span> Improvement <br>
-                            <span>Website:</span> Visit online </p>
-                    </div>
-                    <div class="plus-info">
+        <section id="work">
+            <div class="work-section">
+                <div class="titles">
+                    <h1>Work</h1>
+                    <p>Customize the software for your needs. You will love it when see
+                        <br> how easy it is!
+                    </p>
+                </div>
+                <div class="container-work">
+                    <div class="content">
+                        <div class="title-work">
+                            <p class="core-features">Some main features
+                                on the core version</p>
+                        </div>
+                        <div class="work-infos">
+                            <p><span>Date:</span> August 25, 2018 <br>
+                                <span>Client:</span> SHORT Group <br>
+                                <span>Task:</span> Lorem ipsum dolor sit amet <br>
+                                <span>Category:</span> Improvement <br>
+                                <span>Website:</span> Visit online </p>
+                        </div>
                         <span class="plus">+</span><span class="info">info</span>
                     </div>
+                    <div class="item"><img src="/ASSETS/IMG/work/portfolio_5.jpg"></div>
+                    <div class="item"><img src="/ASSETS/IMG/work/portfolio_4.jpg"></div>
+                    <div class="item"><img src="/ASSETS/IMG/work/portfolio_1.jpg"></div>
+                    <div class="item"><img src="/ASSETS/IMG/work/portfolio_3.jpg"></div>
+                    <div class="item"><img src="/ASSETS/IMG/work/portfolio_2.jpg"></div>
                 </div>
-
-                <div class="item"><img src="/ASSETS/IMG/work/portfolio_5.jpg"></div>
-                <div class="item"><img src="/ASSETS/IMG/work/portfolio_4.jpg"></div>
-                <div class="item"><img src="/ASSETS/IMG/work/portfolio_1.jpg"></div>
-                <div class="item"><img src="/ASSETS/IMG/work/portfolio_3.jpg"></div>
-                <div class="item"><img src="/ASSETS/IMG/work/portfolio_2.jpg"></div>
-
-
-
             </div>
         </section>
 
-        <section class="clients-testimonials">
+        <section id="clients-testimonials">
             <div class="titles">
                 <h1>Clients & Testimonials</h1>
                 <p>What others think about US.</p>
@@ -283,8 +278,8 @@
                     <div class="logo-clients"><img src="/ASSETS/IMG/client_4.png"></div>
                     <div class="logo-clients"><img src="/ASSETS/IMG/client_5.png"></div>
                 </div>
-                <div class="selectors">
-                    <img class="coma1" src="/ASSETS/UI/coma2.svg" alt="coma1">
+                <div class="selectors-clients">
+                    <a href="#"><img class="coma1" src="/ASSETS/UI/coma2.svg" alt="coma1"></a>
                     <img class="clients-img" src="/ASSETS/IMG/testi_1.png" alt="clients">
                     <img class="clients-img" src="/ASSETS/IMG/testi_2.png" alt="clients">
                     <img class="clients-img" src="/ASSETS/IMG/testi_3.png" alt="clients">
@@ -305,7 +300,7 @@
             </div>
         </section>
 
-        <section class="ready">
+        <section id="ready">
             <div class="container-ready">
                 <h1>Ready to create own space?</h1>
                 <div class="button-ready">
@@ -319,9 +314,10 @@
     </main>
     <footer class="footer">
         <div class="container-footer">
-            <p><span>+ 351 213 662 844</span> | help@houzzplanner.com</p>
-            <p><span>more info...</span></p>
-            <p>© 2018, All rights reserved - Coded by <span>me!</span></p>
+            <p><span><a href="tel:+351999888777">+ 351 213 662 844</a></span> | <a
+                    href="mailto:karen@gmail.com">help@houzzplanner.com</a></p>
+            <p><span><a href="#">more info...</a></span></p>
+            <p>© 2018, All rights reserved - Coded by <span>Karen Nasser</span></p>
         </div>
     </footer>
 </body>
