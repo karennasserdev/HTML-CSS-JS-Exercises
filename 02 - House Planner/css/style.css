@@ -22,10 +22,10 @@ margin-right: 130px; */
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #87bd4b;
   width: 100%;
   height: 150px;
   font-size: 2.5rem;
+  background-color: #87bd4b;
 }
 
 /*----------------NAV----------------*/
@@ -72,11 +72,11 @@ margin-right: 130px; */
 
 .slider {
   /* container */
-  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: row;
   align-items: center;
+  width: 100%;
   margin-top: 60px;
 }
 
@@ -96,8 +96,8 @@ margin-right: 130px; */
 }
 
 .space-left {
-  width: 130px;
   float: left;
+  width: 130px;
 }
 
 .space-right {
@@ -105,7 +105,6 @@ margin-right: 130px; */
 }
 
 .port-img {
-  /* imagem (que esta em um div-pai, junto com as setas e as bolinhas)*/
   width: 100%;
   overflow: hidden;
 }
@@ -120,8 +119,8 @@ margin-right: 130px; */
   position: relative;
   bottom: 85px;
   left: 45%;
-  height: 30px;
   width: 30px;
+  height: 30px;
   margin: 10px;
   background-color: white;
   border-radius: 50%;
@@ -138,50 +137,50 @@ margin-right: 130px; */
 /*----------------ABOUT US----------------*/
 
 .titles h1 {
-  color: #87bd4b;
-  font-weight: bold;
-  font-size: 5rem;
   margin-bottom: 30px;
   margin-top: 60px;
+  font-weight: bold;
+  font-size: 5rem;
+  color: #87bd4b;
   text-align: center;
 }
 
 .titles p {
-  color: rgb(194, 193, 193);
-  font-size: 2.2rem;
   margin-bottom: 30px;
-  text-align: center;
-  line-height: 1.5em;
+  font-size: 2.2rem;
   font-weight: 300;
+  line-height: 1.5em;
+  color: rgb(194, 193, 193);
+  text-align: center;
 }
 
 hr {
+  height: 1.5px;
   margin-left: 130px;
   margin-right: 130px;
   margin-bottom: 30px;
-  height: 1.5px;
   background-color: lightgray;
   border: none;
 }
 
 .box {
   position: absolute;
-  background-color: #87bd4b;
-  border: 15px solid #87bd4b;
-  box-shadow: 3px 3px 6px rgb(116, 116, 116);
   margin-top: 60px;
   margin-left: 45px;
+  box-shadow: 3px 3px 6px rgb(116, 116, 116);
+  background-color: #87bd4b;
+  border: 15px solid #87bd4b;
 }
 
 .box p {
-  color: white;
   font-size: 4.5em;
+  color: white;
 }
 
 .box-img {
-  margin-right: 50px;
   width: 380px;
   height: auto;
+  margin-right: 50px;
 }
 
 .container-flex {
@@ -208,8 +207,8 @@ hr {
 }
 
 .highlight-about {
-  font-size: 2.5rem;
   margin-bottom: 30px;
+  font-size: 2.5rem;
   font-weight: 500;
   line-height: 1.5em;
 }
@@ -226,21 +225,21 @@ hr {
 }
 
 .text-title .features-highlight {
-  color: #87bd4b;
-  font-size: 4rem;
-  font-weight: 300;
-  border-bottom: 2px solid lightgray;
   padding-bottom: 30px;
   margin-bottom: 30px;
   margin-right: 50px;
+  font-size: 4rem;
+  font-weight: 300;
+  color: #87bd4b;
+  border-bottom: 2px solid lightgray;
 }
 
 .info {
-  color: rgb(194, 193, 193);
+  margin-left: 10px;
   font-size: 2rem;
   font-style: italic;
   font-weight: 300;
-  margin-left: 10px;
+  color: rgb(194, 193, 193);
 }
 
 .title,
@@ -259,16 +258,16 @@ hr {
 }
 
 .plus {
-  color: #87bd4b;
   font-size: 3rem;
   font-weight: 600;
+  color: #87bd4b;
 }
 
 .container-features h2 {
-  font-size: 4rem;
-  color: rgb(194, 193, 193);
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 4rem;
+  color: rgb(194, 193, 193);
 }
 
 .container-features .logo-img {
@@ -277,10 +276,10 @@ hr {
 }
 
 .container-features p {
-  color: rgb(194, 193, 193);
+  font-weight: 300;
   font-size: 1.8rem;
   line-height: 1.5em;
-  font-weight: 300;
+  color: rgb(194, 193, 193);
 }
 
 .button-readmore {
@@ -288,10 +287,15 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
-  border: 2px solid #87bd4b;
   width: 40%;
   padding: 10px;
+  margin-top: 30px;
+  border: 2px solid #87bd4b;
+  cursor: pointer;
+}
+
+.button-readmore a {
+    color: rgb(194, 193, 193);
 }
 
 .arrow-features {
@@ -312,10 +316,10 @@ hr {
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  background-color: #87bd4b;
   width: 100%;
   height: 800px;
   margin-bottom: 80px;
+  background-color: #87bd4b;
 }
 
 .containerflex-services {
@@ -328,29 +332,29 @@ hr {
 }
 
 .services-title > h1 {
-  color: white;
-  font-size: 4.5rem;
-  margin-bottom: 30px;
-  text-align: center;
   margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 4.5rem;
   font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .services-title p {
-  color: white;
-  font-size: 2rem;
   margin-bottom: 50px;
-  text-align: center;
-  line-height: 1.5em;
+  font-size: 2rem;
   font-weight: 300;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
 }
 
 .services-blocks {
-  margin: 30px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
+  margin: 30px;
 }
 
 .icons-services {
@@ -360,18 +364,18 @@ hr {
 }
 
 .services-blocks h1 {
-  color: white;
-  font-size: 4rem;
   margin-bottom: 30px;
-  text-align: center;
   margin-top: 20px;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
 }
 
 /*----------------WORK----------------*/
 
 .work-section {
-  margin-bottom: 100px;
   max-width: 100%;
+  margin-bottom: 100px;
   margin-left: 130px;
   margin-right: 130px;
 }
@@ -384,13 +388,13 @@ hr {
 }
 
 .title-work .core-features {
-  color: #87bd4b;
   width: 100%;
-  font-size: 4.5rem;
-  font-weight: 300;
-  border: none;
   margin-bottom: 30px;
   margin-right: 50px;
+  font-size: 4.5rem;
+  font-weight: 300;
+  color: #87bd4b;
+  border: none;
 }
 
 .item img {
@@ -410,19 +414,19 @@ hr {
 }
 
 .content p {
-  color: rgb(194, 193, 193);
+  width: 80%;
   font-size: 2.2rem;
   line-height: 1.5em;
-  width: 80%;
+  color: rgb(194, 193, 193);
 }
 
 .work-infos p {
-  color: rgb(194, 193, 193);
+  width: 75%;
+  padding-bottom: 30px;
   font-size: 2.2rem;
   line-height: 2em;
-  width: 75%;
+  color: rgb(194, 193, 193);
   border-bottom: 1px solid lightgray;
-  padding-bottom: 30px;
 }
 
 .work-infos span {
@@ -505,9 +509,9 @@ hr {
 }
 
 .clients-img-selected {
-  opacity: 100%;
   width: 100px;
   height: auto;
+  opacity: 100%;
   box-shadow: 0 6px 0 0 #87bd4b;
 }
 
@@ -516,24 +520,24 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  text-align: center;
   margin-bottom: 100px;
   margin-left: 450px;
   margin-right: 450px;
+  text-align: center;
 }
 
 .about-client h1 {
-  color: #87bd4b;
+  margin-bottom: 30px;
   font-size: 2.5rem;
   font-weight: bold;
-  margin-bottom: 30px;
+  color: #87bd4b;
 }
 
 .about-client p {
-  text-align: justify;
-  color: rgb(194, 193, 193);
   font-size: 2rem;
   line-height: 1.5em;
+  color: rgb(194, 193, 193);
+  text-align: justify;
 }
 
 .good-work p {
@@ -547,24 +551,24 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  background-color: #87bd4b;
   height: 400px;
+  background-color: #87bd4b;
 }
 
 .container-ready h1 {
-  color: white;
-  font-size: 6rem;
-  text-align: center;
   margin-bottom: 30px;
+  font-size: 6rem;
+  color: white;
+  text-align: center;
 }
 
 .container-ready p {
-  color: white;
-  font-size: 2.2rem;
   margin-right: 10px;
-  text-align: center;
-  line-height: 1.5em;
   font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+  color: white;
+  text-align: center;
 }
 
 .button-ready {
@@ -573,11 +577,15 @@ hr {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  border: 2px solid white;
   padding: 10px;
   width: 250px;
+  border: 2px solid white;
   cursor: pointer;
   transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
 }
 
 .button-ready:hover {
@@ -592,8 +600,8 @@ hr {
   display: inline-block;
   bottom: 85px;
   left: 45%;
-  height: 15px;
   width: 15px;
+  height: 15px;
   margin: 2px;
   background-color: white;
   border-radius: 50%;
@@ -606,10 +614,10 @@ hr {
 /*----------------FOOTER----------------*/
 
 .footer {
-  background-color: #535353;
   height: 80px;
-  color: lightgray;
   font-size: 2.2rem;
+  color: lightgray;
+  background-color: #535353;
 }
 
 .container-footer {
