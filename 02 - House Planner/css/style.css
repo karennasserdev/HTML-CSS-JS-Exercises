@@ -33,21 +33,35 @@ margin-right: 130px; */
 .navbar {
   display: flex;
   flex-direction: row;
+  border-top: solid 8px transparent;
 }
 
 .navbar ul {
   display: flex;
   flex-direction: row;
-  border-top: solid 1.5px rgb(255, 255, 255, 0.8);
+  border-top: solid 3px rgb(255, 255, 255, 0.8);
 }
 
 .navbar ul li {
   padding: 20px;
-  border-top: solid 8px transparent;
 }
 
-.navbar ul li:first-child {
-  border-top: solid 8px rgb(255, 255, 255);
+.navbar ul {
+  cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.navbar ul li:hover {
+  border-top: solid 5px rgb(255, 255, 255);
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 .navbar a {
@@ -86,6 +100,7 @@ margin-right: 130px; */
   padding-left: 50px;
   width: 35px;
   height: auto;
+  cursor: pointer;
 }
 
 .arrow-right {
@@ -93,6 +108,7 @@ margin-right: 130px; */
   padding-right: 50px;
   width: 35px;
   height: auto;
+  cursor: pointer;
 }
 
 .space-left {
@@ -117,6 +133,7 @@ margin-right: 130px; */
 .dot {
   display: inline-block;
   position: relative;
+  cursor: pointer;
   bottom: 85px;
   left: 45%;
   width: 30px;
@@ -255,12 +272,14 @@ hr {
   align-content: stretch;
   align-items: center;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .plus {
   font-size: 3rem;
   font-weight: 600;
   color: #87bd4b;
+  cursor: pointer;
 }
 
 .container-features h2 {
@@ -292,10 +311,23 @@ hr {
   margin-top: 30px;
   border: 2px solid #87bd4b;
   cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.button-readmore:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 .button-readmore a {
-    color: rgb(194, 193, 193);
+  color: rgb(194, 193, 193);
 }
 
 .arrow-features {
@@ -402,6 +434,7 @@ hr {
   height: 100%;
   object-fit: cover;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .item:hover {
@@ -481,8 +514,18 @@ hr {
   align-content: center;
 }
 
-.logo-clients:hover {
-  background-color: #87bd4b;
+.logo-clients img {
+  transition: transform 0.2s;
+}
+
+.logo-clients img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 0.7;
+  cursor: pointer;
 }
 
 .selectors-clients {
@@ -492,6 +535,7 @@ hr {
   align-content: center;
   margin-top: 30px;
   margin-bottom: 80px;
+  cursor: pointer;
 }
 
 .coma1 {
@@ -508,10 +552,22 @@ hr {
   opacity: 50%;
 }
 
-.clients-img-selected {
-  width: 100px;
-  height: auto;
-  opacity: 100%;
+.clients-img {
+  cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.clients-img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 9;
   box-shadow: 0 6px 0 0 #87bd4b;
 }
 
