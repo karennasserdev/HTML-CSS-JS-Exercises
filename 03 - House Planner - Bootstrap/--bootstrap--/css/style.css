@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  color: rgb(194, 193, 193);
+  text-decoration: none;
+}
+
 /* ------------------------------NAVBAR------------------------------ */
 
 .navbar {
@@ -39,15 +44,17 @@ a {
   border-top: solid 2px rgb(255, 255, 255);
 }
 
-li.nav-item.active {
-  border-top: solid 6px rgb(255, 255, 255);
-}
-
 li.nav-item {
   border-top: solid 6px transparent;
 }
-s
 
+.nav-item {
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  border-top: solid 6px rgb(255, 255, 255);
+}
 
 /* ------------------------------CAROUSEL------------------------------ */
 
@@ -100,6 +107,7 @@ hr {
   font-size: 3rem;
   font-weight: 600;
   color: #87bd4b;
+  cursor: pointer;
 }
 
 .info {
@@ -107,6 +115,7 @@ hr {
   font-style: italic;
   font-weight: 300;
   color: rgb(194, 193, 193);
+  cursor: pointer;
 }
 
 .features-column {
@@ -130,6 +139,19 @@ hr {
 .button-readmore {
   border: 2px solid #87bd4b;
   cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.button-readmore:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 .button-readmore p {
@@ -174,12 +196,17 @@ hr {
   color: #87bd4b;
 }
 
-.container img {
+.work-img {
   object-fit: cover;
+  cursor: pointer;
   transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
 }
 
-.container img:hover {
+.work-img:hover {
   transform: scale(1.05);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
@@ -193,4 +220,124 @@ hr {
   line-height: 2em;
   color: rgb(194, 193, 193);
   border-bottom: 1px solid lightgray;
+}
+
+
+.img-clients {
+  cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.img-clients:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 9;
+}
+
+
+.clients-img {
+  cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.clients-img:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  opacity: 9;
+  box-shadow: 0 6px 0 0 #87bd4b;
+}
+
+.clients-img {
+  width: 100px;
+  height: auto;
+  opacity: 50%;
+}
+
+.clients-img-selected {
+  width: 100px;
+  height: auto;
+}
+
+.about-client h1 {
+  font-size: 2.5rem;
+  color: #87bd4b;
+}
+
+.about-client p {
+  font-size: 2rem;
+  line-height: 1.5em;
+  color: rgb(194, 193, 193);
+  text-align: justify;
+}
+
+/* ------------------------------READY------------------------------ */
+
+.container-ready {
+  height: 400px;
+  background-color: #87bd4b;
+}
+
+.container-ready h1 {
+  font-size: 6rem;
+}
+
+.container-ready p {
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 1.5em;
+}
+
+.button-ready {
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
+}
+
+.button-ready:hover {
+  transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -moz-transform: scale(1.15);
+  -ms-transform: scale(1.15);
+  -o-transform: scale(1.15);
+}
+
+.dots {
+  width: 15px;
+  height: 15px;
+  margin: 2px;
+  background-color: white;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* ------------------------------FOOTER------------------------------ */
+
+footer {
+  height: 80px;
+  color: lightgray;
+}
+
+footer p {
+  font-size: 2.2rem;
 }
