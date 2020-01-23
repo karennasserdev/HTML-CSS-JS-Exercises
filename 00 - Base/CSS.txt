@@ -1,0 +1,98 @@
+
+
+-----SELETORES DESCENDENTES-----
+
+            #conteudo p span { color: #fff; }
+
+Este seletor formata todos os elementos span, que estão dentro de
+um p, que está dentro de um elemento com o atributo id=“conteudo”
+
+
+-----SELETORES AGRUPADOS-----
+
+            h1, h2, h3 { padding: 15px; }
+
+Elementos separados por uma vírgula, herdam todos a mesma
+formatação.
+
+-----SELETORES COMPLEXOS-----
+
+Se necessitar-mos de selecionar todos os elementos P que vem logo
+depois de um heading H1, podemos usar o caracter +
+
+            h1 + p { color:red; }
+
+Se necessitar-mos de selecionar todos os elementos pre que aparecem
+depois de um heading H1 (pode não ser seguido), podemos usar o
+caracter ~
+
+            h1 ~ pre { color:red; }
+
+Se necessitar-mos de selecionar um elemento por indice numérico LI,
+podemos usar o pseudo selector :nth-child(n)
+
+            ul li:nth-child(3) { color:red; }
+
+Para selecionar os elementos ímpares da lista LI, podemos usar o nthchild com a palavra odd e todos os elementos pares com a palavra
+even
+
+            ul li:nth-child(odd) { color:red; }
+
+Para selecionar os elementos de 3 em 3 da lista LI, podemos usar o
+nth-child de uma forma mais elaborada, de forma a acedermos ao 3º,
+6º, 9º, etc.. elemento.
+
+            ul li:nth-child(3n+3) { color:red; }
+
+Ao colocarmos a expressão 3n, na realidade estamos a multiplicar
+“3xn” em que o n vale 0 e auto-incrementa:
+
+            (3 x 0) + 3 = 3 = 3º Elemento
+            (3 x 1) + 3 = 6 = 6º Elemento
+            (3 x 2) + 3 = 9 = 9º Elemento
+
+-----Boas Praticas CSS-----
+
+Good CSS:
+
+.selector,
+.selector-secondary,
+.selector[type=“text"] {
+ padding: 15px;
+ margin-left: 15px;
+ background-color: rgba(0,0,0,.5);
+ box-shadow: 0 1px 2px #ccc, inset 0 1px 0 #fff;
+}
+
+
+-----Ordem das declarações CSS:-----
+
+1. Posicionamento:
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 100;
+
+2. Box model:
+
+            display: block;
+            float: right;
+            width: 100px;
+            height: 100px;
+            margin: 1px 1px 1px 1px;
+            padding: 1px 1px 1px 1px;
+
+
+3. Tipografia:
+
+            font: normal 13px "Helvetica Neue", sans-serif;
+            line-height: 1.5;
+            color: #333;
+            text-align: center;
+
+4. Visual:
+
+            background-color: #f5f5f5;
+            border: 1px solid #e5e5e5;
