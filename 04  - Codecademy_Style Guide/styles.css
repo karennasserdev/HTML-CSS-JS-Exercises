@@ -1,11 +1,11 @@
 html {
-  /*	
-      33 px = 3.3rem
-      */
+  /*33 px = 3.3rem*/
   font-size: 62.5%;
 }
 
 main {
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 5em;
   margin-right: 5em;
   margin-top: 5em;
@@ -35,7 +35,6 @@ nav h1,
 nav h2 {
   margin-left: 1em;
   margin-right: 1em;
-  font-family: "Shadows Into Light Two", cursive;
   font-size: 2em;
   letter-spacing: 0.15em;
   color: white;
@@ -233,7 +232,7 @@ nav h2 {
 }
 
 .sentence-r {
-  margin-bottom: 6em;
+  margin-bottom: 2em;
   font-size: 1.4em;
 }
 
@@ -247,7 +246,7 @@ nav h2 {
 .h1-size {
   font-size: 2.5em;
   font-weight: 300;
-  line-height: 2em;
+  line-height: 1.5em;
 }
 
 .h2-size {
@@ -330,12 +329,14 @@ nav h2 {
 #container-buttons {
   float: left;
   width: 25%;
+  margin-right: 0;
 }
 
 .buttons {
   display: flex;
   flex-direction: column;
   align-content: center;
+  user-select: none;
 }
 
 /*----BUTTONS 1----*/
@@ -356,7 +357,6 @@ nav h2 {
   border-radius: 0;
   box-shadow: inset 0 0 0 var(--border-size) currentcolor;
   cursor: pointer;
-  user-select: none;
   --offset: 10px;
   --border-size: 2px;
   transition: all 0.6s ease;
@@ -391,7 +391,6 @@ nav h2 {
   border: 0;
   border-color: #6c5b7b;
   cursor: pointer;
-  user-select: none;
 }
 
 /*----BUTTONS 2----*/
@@ -454,7 +453,6 @@ nav h2 {
   color: #f67280;
   background: transparent;
   border: 2px solid #f67280;
-  border-radius: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   -ms-border-radius: 0;
@@ -467,7 +465,7 @@ nav h2 {
   -o-transition: all 0.6s ease;
 }
 
-.bc-normal:hover{
+.bc-normal:hover {
   color: #ee6c4d;
   background-color: #e0fbfc;
   border-top-color: transparent;
@@ -479,20 +477,20 @@ nav h2 {
 .bc-normal::after,
 .bc-normal::before {
   display: block;
-  border:2px solid #f67280;
+  border: 2px solid #f67280;
   border-radius: 2px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   -ms-border-radius: 2px;
   -o-border-radius: 2px;
-  transition:all 0.6s ease;
-  -webkit-transition:all 0.6s ease;
-  -moz-transition:all 0.6s ease;
-  -ms-transition:all 0.6s ease;
-  -o-transition:all 0.6s ease;
+  transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition: all 0.6s ease;
+  -ms-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
 }
 
-.bc-hover{
+.bc-hover {
   margin-right: 2em;
   margin-bottom: 2em;
   padding: 1em 2em;
@@ -508,5 +506,145 @@ nav h2 {
   border-left-color: transparent;
   border-bottom-color: #3d5a80;
   border-right-color: #3d5a80;
+  cursor: pointer;
 }
 
+/*-------------------FORM-------------------*/
+
+#container-form {
+  width: 25%;
+  font-family: "Roboto", sans-serif;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+}
+
+/*----Text----*/
+
+.h1-text {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+}
+
+.text-field {
+  margin-bottom: 2em;
+}
+
+.text-field input {
+  height: 2em;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-style: groove;
+  cursor: text;
+}
+
+.form-text {
+  margin-bottom: 2em;
+}
+
+.form-text-error {
+  margin-bottom: 0.5em;
+}
+
+.message {
+  font-size: 1.4em;
+  color: lightcoral;
+}
+
+.error {
+  border: 0.15em solid lightcoral;
+}
+
+input.error::placeholder {
+  font-weight: 500;
+  color: lightcoral;
+}
+
+/*----Radio----*/
+
+.radio-dropdown {
+  margin-left: 3em;
+}
+
+.radio-button {
+  margin-bottom: 1.5em;
+  font-size: 1.3em;
+  font-weight: bold;
+  line-height: 2em;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  opacity: 0;
+  cursor: pointer;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #35477d;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*----Dropdown----*/
+
+.dropdown input {
+  height: 2em;
+  margin-bottom: 2em;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-style: groove;
+  cursor: pointer;
+}

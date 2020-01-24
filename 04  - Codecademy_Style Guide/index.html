@@ -28,18 +28,18 @@
 
     <!--MAIN-->
     <main>
-        <div id="row1">
+
         <div id="container-color">
             <h1>01. Color Pallete - Base Blue</h1>
             <div class="column-colors">
                 <div class="column1">
                     <h2>Primary</h2>
                     <div class="colors color1-col1">
-                    <div class="overlay">
-                        <p>RGBA</p>
-                        <p>61, 90, 128, 1</p>
-                        <p>#3d5a80</p>
-                    </div>
+                        <div class="overlay">
+                            <p>RGBA</p>
+                            <p>61, 90, 128, 1</p>
+                            <p>#3d5a80</p>
+                        </div>
                     </div>
                     <div class="color2-col1">
                         <div class="overlay">
@@ -150,7 +150,7 @@
 
             <div class="sizes">
                 <div class="headers">
-                    <p class="h1-size">H1 - Montserrat Light (30px)</p>
+                    <p class="h1-size">H1 - Montserrat Light (25px)</p>
                     <p class="h2-size">H1 - Montserrat Light (20px)</p>
                     <p class="h3-size">H1 - Montserrat Regular (15px)</p>
                 </div>
@@ -166,14 +166,18 @@
 
             <h2 class="title-p">Lorem ipsum</h2>
             <img class="icon1" src="ASSETS/margin-bottom.svg" alt="margin-bottom">
-            <p class="paragraph-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum iaculis
-                tortor vitae pulvinar. Sed suscipit ultrices felis vel tempus. Ut mollis, enim nec hendrerit iaculis, ex
+            <p class="paragraph-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum
+                iaculis
+                tortor vitae pulvinar. Sed suscipit ultrices felis vel tempus. Ut mollis, enim nec hendrerit
+                iaculis, ex
                 urna tincidunt tortor, tristique elementum ex velit a massa.</p>
 
             <h2 class="title-p">Lorem ipsum</h2>
             <img class="icon2" src="ASSETS/margin-bottom.svg" alt="margin-bottom">
-            <p class="paragraph-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum iaculis
-                tortor vitae pulvinar. Sed suscipit ultrices felis vel tempus. Ut mollis, enim nec hendrerit iaculis, ex
+            <p class="paragraph-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fermentum
+                iaculis
+                tortor vitae pulvinar. Sed suscipit ultrices felis vel tempus. Ut mollis, enim nec hendrerit
+                iaculis, ex
                 urna tincidunt tortor, tristique elementum ex velit a massa.</p>
             <img class="icon3" src="ASSETS/line-height.svg" alt="margin-bottom">
         </div>
@@ -198,10 +202,74 @@
                 </div>
             </div>
         </div>
-    </div>
 
-    <div id="row2">
+
         <div id="container-form">
+            <form id="f1" onsubmit="" method="post">
+                <h1>05. Form</h1>
+                <div class="forms">
+
+                    <div class="text-field">
+                        <p class="h1-text">Textfield</p>
+
+                        <p class="form-text"><input type="text" name="text1" autofocus placeholder="Empty Textfield" />
+                        </p>
+
+                        <p class="form-text"><input type="text" name="text2" autofocus value="Fill in text" /></p>
+
+                        <p class="form-text"><input type="text" name="text3" autofocus disabled
+                                placeholder="Disable Textfield" /></p>
+
+                        <p class="form-text-error"><input class="error" type="text" name="text4" autofocus
+                                placeholder="Error" />
+                            <p class="message">Error message</p>
+                        </p>
+                    </div>
+
+                    <div class="radio-dropdown">
+                        <p class="h1-text">Radio Buttons</p>
+                        <div class="radio-button">
+
+
+                            <label class="container"> Personal Account <input type="radio" name="account"
+                                    value="personal" checked /><span class="checkmark"></span>
+                            </label>
+
+                            <br>
+
+                            <label class="container"> Business Account <input type="radio" name="account"
+                                    value="business" /><span class="checkmark"></span>
+                            </label>
+
+                        </div>
+                        <p class="h1-text">Dropdown</p>
+                        <div class="dropdown">
+                            <p><input list="dropdown" type="text" name="dropdown" autofocus tabindex="1"
+                                    placeholder="Normal" /> </p>
+                            <datalist id="dropdown">
+                                <option value=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </datalist>
+
+                            <p><input list="dropdown" type="text" name="dropdown" autofocus tabindex="1"
+                                    value="Selected" /> </p>
+                            <datalist id="dropdown">
+                                <option value=""></option>
+                                <option value="1"></option>
+                                <option value="2"></option>
+                                <option value="3"></option>
+                                <option value="4"></option>
+                                <option value="5"></option>
+                            </datalist>
+                        </div>
+
+                    </div>
+            </form>
+        </div>
 
 
 
@@ -212,7 +280,9 @@
 
 
 
-    </div>
+
+
+        </div>
 
 
 
