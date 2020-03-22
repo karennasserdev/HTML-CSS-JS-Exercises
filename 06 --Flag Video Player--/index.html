@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <script src="https://kit.fontawesome.com/eb4a3ae5e6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/progress.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div class="video-player">
+            <h1 id="title">Video Player</h1>
+            <video src="/videos/gone.mp4" id="video" class="screen" poster="img/poster.png">
+            </video>
+            <div class="controls">
+                <button class="btn" id="prev">
+                    <i class="fas fa-backward fa-2x"></i>
+                </button>
+                <button class="btn" id="play">
+                    <i class="fas fa-play fa-2x"></i>
+                </button>
+                <button class="btn" id="stop">
+                    <i class="fas fa-stop fa-2x"></i>
+                </button>
+                <button class="btn" id="next">
+                    <i class="fas fa-forward fa-2x"></i>
+                </button>
+
+                <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+                <span class="timestamp" id="timestamp">00:00 / 00:00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="videos-list">
+        <h1>Playlist</h1>
+        <ul id="my-v-list">
+        </ul>
+    </div>
+    <footer>
+        <p>Imagem de <a
+                href="https://pixabay.com/pt/users/rahu-4725201/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2951399">rahul
+                yadav</a> por <a
+                href="https://pixabay.com/pt/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2951399">Pixabay</a>
+        </p>
+    </footer>
+    <script src="/app.js"></script>
+</body>
+
+</html>

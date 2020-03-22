@@ -1,0 +1,32 @@
+[
+    { 
+        "id": 1, 
+        "name": "Basel Overview", 
+        "video": "basel-overview.mp4", 
+        "image": "basel-overview.jpg" 
+    },
+    { 
+        "id": 2, 
+        "name": "Panning Shot of Sunset", 
+        "video": "panning-shot-of-sunset.mp4", 
+        "image": "panning-shot-of-sunset.jpg" 
+    },
+    { 
+        "id": 3, 
+        "name": "Plane Over Manhattan", 
+        "video": "plane-over-manhattan.mp4", 
+        "image": "plane-over-manhattan.jpg" 
+    },
+    { 
+        "id": 4, 
+        "name": "Pua Vida", 
+        "video": "pura-vida.mp4", 
+        "image": "pura-vida.jpg" 
+    },
+    { 
+        "id": 5, 
+        "name": "Gone", 
+        "video": "gone.mp4", 
+        "image": "poster.png" 
+    }
+]

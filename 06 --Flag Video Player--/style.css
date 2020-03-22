@@ -1,0 +1,229 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url("https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Paytone+One&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*--------MY CSS--------*/
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(/img/flower-4865379.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Muli", sans-serif;
+}
+
+#container {
+  width: 20%;
+  height: auto;
+}
+
+.video-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-player h1 {
+font-family: 'Paytone One', sans-serif;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #9b9494;
+  letter-spacing: 0rem;
+  text-shadow: 0 5px 8.896px #c3bfb8,0 -2px 1px rgb(179, 167, 167);}
+
+.screen {
+  width: 200%;
+  height: auto;
+  background-color: gray;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(77, 126, 109);
+  width: 740px;
+  height: 50px;
+}
+
+.btn {
+  background-color: rgb(155, 179, 112);
+  color: rgb(77, 126, 109);
+  border: 2px;
+  cursor: pointer;
+  height: 50px;
+}
+
+.timestamp {
+  color: white;
+}
+
+.videos-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.5em;
+}
+
+.videos-list h1 {
+  font-size: 1.5em;
+  margin-bottom: 2.5em;
+  font-weight: 500;
+  padding-bottom: 5px;
+  border-bottom: 3px solid rgb(77, 126, 109);
+}
+
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  text-align: end;
+}
+
+footer p {
+  font-size: 0.8em;
+  opacity: 0.3;
+}
+
+footer a {
+    text-decoration: none;
+}
